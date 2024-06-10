@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=Number(prompt("enter a number you want to check armsrtong or not:"))
+        let d=a;
+        let sum=0;
+        let b;
+        let numberofterm;
+        while(a>0){
+            a=Math.floor(a/10);  
+            numberofterm++;
+        }
+        while(a>0) {
+            b=a%10;
+            sum=sum+Math.pow(b,numberofterm);
+            a=Math.floor(a/10);  
+    }
+    if(sum==d){
+        alert("number is armsrtong")
+    }
+    else{
+        alert("number is not armsrtong")
+    }
+                </script>
+</body>
+</html>
